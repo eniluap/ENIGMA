@@ -15,9 +15,9 @@
 #-----------------------------------------------
 
 #---Section 1. Script directories
-scriptDir="/ifshome/disaev/ENIGMA_TUTORIAL/scripts/" ## where you have downloaded the ENIGMA Regression R scripts!
-resDir="/ifshome/disaev/ENIGMA_TUTORIAL/results/"   ## directory to be created for your results!
-logDir="/ifshome/disaev/ENIGMA_TUTORIAL/log/"        ## directory to be created to output the log files
+scriptDir="/Users/Pauline/git/ENIGMA/WorkingGroups/EffectSize_and_GLM/example_tutorial/scripts/" ## where you have downloaded the ENIGMA Regression R scripts!
+resDir="/Users/Pauline/git/ENIGMA/WorkingGroups/EffectSize_and_GLM/example_tutorial/results/"   ## directory to be created for your results!
+logDir="/Users/Pauline/git/ENIGMA/WorkingGroups/EffectSize_and_GLM/example_tutorial/log/"        ## directory to be created to output the log files
 
 #---Section 2. Configuration variables-----
 ## Get the following from your working group leader ## 
@@ -28,15 +28,15 @@ ROI_LIST=("AverageFA" "GCC" "BCC" "SCC" "FX" "CST_R" "CST_L" "ALIC_R" "ALIC_L" "
 
 ## These are all you -- enter your site ID and paths to your files
 SITE="MDR"
-DATADIR="/ifshome/disaev/ENIGMA_TUTORIAL/data"
-SUBJECTS_COV="/ifshome/disaev/ENIGMA_TUTORIAL/data/covariates.csv"
+DATADIR="/Users/Pauline/git/ENIGMA/WorkingGroups/EffectSize_and_GLM/example_tutorial/data"
+SUBJECTS_COV="/Users/Pauline/git/ENIGMA/WorkingGroups/EffectSize_and_GLM/example_tutorial/data/covariates.csv"
 
 ## how are you running this?? Command-line or on Q-SUB
 Nnodes=${#ROI_LIST[@]} 	# ***uncomment this if using a SGE or PBS cluster *** Set number of nodes to the length of ROI list
 #Nnodes=1		# *** otherwise we're going to set the number of nodes to 1 and assume you are running locally
 
 #---Set the full path to your R binary
-Rbin=/usr/local/R-3.1.3/bin/R
+Rbin=/Library/Frameworks/R.framework/Resources/bin/R
 
 ###### optional edits:
 QA_LEVEL=""
